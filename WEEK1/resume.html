@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chenlu — Resume</title>
+  <meta name="description" content="Resume of Chenlu, front-end developer — experience, skills, and education." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class='brand' href='index.html'><span class="brand-dot"></span> Chenlu</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='resume.html'>Resume</a></li>
+        <li><a href='projects.html'>Projects</a></li>
+        <li><a href='contact.html'>Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Resume</h1>
+      <p>A quick look at where I've been and what I've picked up along the way.</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" style="padding-top:20px;">
+    <div class="container">
+      <h2 class="section-title" style="text-align:left;">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2022 — Present</div>
+          <div class="timeline-body">
+            <h3>Front-End Developer</h3>
+            <p class="org">Brightwave Studio</p>
+            <p>Lead the front-end of client marketing sites and a design system used across 6 product teams. Cut page load times by 40% and mentored two junior developers.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2020 — 2022</div>
+          <div class="timeline-body">
+            <h3>Web Developer</h3>
+            <p class="org">Maple &amp; Co.</p>
+            <p>Built accessible, responsive landing pages and interactive components with HTML, CSS, and JavaScript. Partnered with designers to ship a brand refresh that lifted conversions 18%.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2019 — 2020</div>
+          <div class="timeline-body">
+            <h3>Front-End Intern</h3>
+            <p class="org">Northstar Labs</p>
+            <p>Contributed to an internal dashboard, wrote reusable UI components, and helped document a component library for the wider team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" style="text-align:left;">Skills</h2>
+      <p class="section-subtitle" style="text-align:left; margin-left:0;">A handful of tools I reach for most days.</p>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-name">HTML &amp; CSS</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">React</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Responsive UI</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Accessibility</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-row">
+          <span class="skill-name">Figma</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" style="text-align:left;">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2016 — 2020</div>
+          <div class="timeline-body">
+            <h3>B.S. in Computer Science</h3>
+            <p class="org">State University</p>
+            <p>Focused on human-computer interaction and web technologies. Co-led the campus web club and organized two design jams.</p>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:24px;"><a class='btn btn-ghost' href='contact.html'>Get in touch</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="funfact">
+        <strong>Fun fact:</strong> I once got lost looking for a coffee shop and ended up on a 14-mile hike. Best detour ever.
+      </div>
+      <div>
+        <div class="footer-links">
+          <a href='index.html'>Home</a>
+          <a href='resume.html'>Resume</a>
+          <a href='projects.html'>Projects</a>
+          <a href='contact.html'>Contact</a>
+        </div>
+        <p class="footer-copy">&copy; <span id="year"></span> Chenlu. Made with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
